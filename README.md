@@ -21,6 +21,9 @@ Hash Function:
 
 $$h(k) = \lfloor m * (k * A \bmod 1) \rfloor$$
 
+>[!NOTE]
+>This hash function is basically `Modular Division` with few extra steps.
+
 Where:
 * $k$ is the student ID.
 * $m$ is the address space `15,000`.
