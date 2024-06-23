@@ -17,7 +17,7 @@ To start off, we'll use a hash function based on a combination of division and m
 
 Hash Function:
 $$
-
+h(k) = \lfloor m * (k * A \bmod 1) \rfloor
 $$
 
 ## License
