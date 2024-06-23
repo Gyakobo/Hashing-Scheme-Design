@@ -9,7 +9,9 @@ In this project I'll try to demonstrate a hashing scheme for storing and retriev
 
 ## Introduction
 
-Hearkening from the introduction, we'll be designing a *hash function* which would take in a variety of keys with little to no collision errors between the keys.  
+Hearkening from the introduction, we'll be designing a *hash function* which would take in a variety of keys with little to no collision errors between the keys. 
+
+In our case we'll be working to retrieve student records (admissions creadentials, transcripts, degreeworks, etc.). We'll assume to have `12,000 students` and use an address space of `15,000`.
 
 ## Methodology
 
