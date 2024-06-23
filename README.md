@@ -19,15 +19,14 @@ To start off, we'll use a hash function based on a combination of division and m
 
 Hash Function:
 
-$$h(k) = \lfloor m * (k * A \bmod 1) \rfloor$$
+$$h(k) = k \bmod N $$
 
 >[!NOTE]
 >This hash function is basically `Modular Division` with few extra steps.
 
 Where:
 * $k$ is the student ID.
-* $m$ is the address space `15,000`.
-* $A$ is a constant $(0 < A < 1)$. A comon choice is $A = \frac{\sqrt{5} - 1}{2} \approx 0.6180339887$
+* $N$ is the address space `15,000`.
 
 ## License
 MIT
