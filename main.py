@@ -6,9 +6,10 @@ address_space   = 15000
 # address_space   = 15013
 
 # Generate 12,000 unique student IDs(assuming IDs are integers for simplicity)
-student_ids = sample(range(1, 20000), num_students) # ensure unique IDs
+student_ids = sample(range(1, num_students+3000), num_students) # ensure unique IDs
 
 def hash_function(id, N):
+    # N - address space
     return id % N 
 
 # Apply the hash function and store in hash table
