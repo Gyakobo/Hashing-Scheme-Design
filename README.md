@@ -27,7 +27,7 @@ This method is simpler and more intuitive. We can then empirically test the numb
 
 ## Results and Analysis
 
-
+When it comes to the results of this simulation I actually get total sum of 0 collisions which is just fantastic. I however decided to test the hash function on more IDs and realized that the collisions start to appear and amplify at this range [1, num_students + 3000] and onwards going. If I were to improve this algorithm I would change the given variables a bit to accommodate for the collisions. For instance, I would use a prime number modular divisor (something like 15013) for the hash function or lessen the spread of the random IDs.
 
 ## License
 MIT
