@@ -9,24 +9,25 @@ In this project I'll try to demonstrate a hashing scheme for storing and retriev
 
 ## Introduction
 
-Hearkening from the introduction, we'll be designing a *hash function* which would take in a variety of keys with little to no collision errors between the keys. 
+Hearkening from the introduction, we'll be designing a *hash function* which would take in a variety of keys with little collision errors between the keys. 
 
 In our case we'll be working to retrieve student records (admissions creadentials, transcripts, degreeworks, etc.). We'll assume to have `12,000 students` and use an address space of `15,000`.
 
 ## Methodology
 
-To start off, we'll use a hash function based on a combination of division and multiplication methods. The division method ensures we stay within the address space, and the multiplication method helps distribute the hash values more uniformly.
-
-Hash Function:
+To start off, let's make our hash function. A straitforwared and commonly used method is the `Modular Division`: 
 
 $$h(k) = k \bmod N $$
-
->[!NOTE]
->This hash function is basically `Modular Division` with few extra steps.
 
 Where:
 * $k$ is the student ID.
 * $N$ is the address space `15,000`.
+
+This method is simpler and more intuitive. We can then empirically test the number of collisions with this hash function.
+
+## Results and Analysis
+
+
 
 ## License
 MIT
